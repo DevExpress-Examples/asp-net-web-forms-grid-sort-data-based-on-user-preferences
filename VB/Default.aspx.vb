@@ -51,10 +51,7 @@ Partial Public Class _Default
         Dim endIndex As Integer = Math.Min(ASPxGridView1.VisibleRowCount, startIndex + ASPxGridView1.SettingsPager.PageSize)
 
         For i As Integer = startIndex To endIndex - 1
-            Dim txtLowerBound As ASPxSpinEdit = CType(ASPxGridView1.FindRowCellTemplateControl(i, CType(ASPxGridView1.Columns("LowerBound"), GridViewDataColumn), "txtLB"), ASPxSpinEdit)
-            If txtLowerBound.Text = "" Then
-                Return
-            End If
+            Dim txtLowerBound As ASPxTextBox = CType(ASPxGridView1.FindRowCellTemplateControl(i, CType(ASPxGridView1.Columns("LowerBound"), GridViewDataColumn), "txtLB"), ASPxTextBox)
             Dim lowerBound As Integer = Integer.Parse(txtLowerBound.Text.Trim())
             Dim key As Object = ASPxGridView1.GetRowValues(i, "CategoryID")
             If Not lowerBoundStorage.ContainsKey(key) Then
