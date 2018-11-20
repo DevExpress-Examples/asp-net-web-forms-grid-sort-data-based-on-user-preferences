@@ -45,7 +45,9 @@ public partial class _Default : System.Web.UI.Page {
         int endIndex = Math.Min(ASPxGridView1.VisibleRowCount, startIndex + ASPxGridView1.SettingsPager.PageSize);
 
         for (int i = startIndex; i < endIndex; i++) {
-            ASPxTextBox txtLowerBound = (ASPxTextBox)ASPxGridView1.FindRowCellTemplateControl(i, (GridViewDataColumn)ASPxGridView1.Columns["LowerBound"], "txtLB");
+            ASPxSpinEdit txtLowerBound = (ASPxSpinEdit)ASPxGridView1.FindRowCellTemplateControl(i, (GridViewDataColumn)ASPxGridView1.Columns["LowerBound"], "txtLB");
+            if(txtLowerBound.Text == "")
+                return;
             int lowerBound = int.Parse(txtLowerBound.Text.Trim());
             object key = ASPxGridView1.GetRowValues(i, "CategoryID");
             if (!lowerBoundStorage.ContainsKey(key))
