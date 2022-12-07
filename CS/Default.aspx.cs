@@ -2,8 +2,7 @@
 using System.Data;
 using System.Data.OleDb;
 using System.Collections.Generic;
-using DevExpress.Web.ASPxGridView;
-using DevExpress.Web.ASPxEditors;
+using DevExpress.Web;
 
 public partial class _Default : System.Web.UI.Page {
     protected void Page_Init(object sender, EventArgs e) {
@@ -22,7 +21,7 @@ public partial class _Default : System.Web.UI.Page {
                 editor.Value = lowerBoundStorage[key];
         }
     }
-    protected void ASPxGridView1_CustomUnboundColumnData(object sender, DevExpress.Web.ASPxGridView.ASPxGridViewColumnDataEventArgs e) {
+    protected void ASPxGridView1_CustomUnboundColumnData(object sender, DevExpress.Web.ASPxGridViewColumnDataEventArgs e) {
         if (e.Column.FieldName == "LowerBound") {
             Dictionary<object, int> lowerBoundStorage = Session["lowerBoundStorage"] as Dictionary<object, int>;
             if (lowerBoundStorage == null) {

@@ -2,8 +2,7 @@
 Imports System.Data
 Imports System.Data.OleDb
 Imports System.Collections.Generic
-Imports DevExpress.Web.ASPxGridView
-Imports DevExpress.Web.ASPxEditors
+Imports DevExpress.Web
 
 Partial Public Class _Default
     Inherits System.Web.UI.Page
@@ -26,7 +25,7 @@ Partial Public Class _Default
             End If
         End If
     End Sub
-    Protected Sub ASPxGridView1_CustomUnboundColumnData(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridView.ASPxGridViewColumnDataEventArgs)
+    Protected Sub ASPxGridView1_CustomUnboundColumnData(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxGridViewColumnDataEventArgs)
         If e.Column.FieldName = "LowerBound" Then
             Dim lowerBoundStorage As Dictionary(Of Object, Integer) = TryCast(Session("lowerBoundStorage"), Dictionary(Of Object, Integer))
             If lowerBoundStorage Is Nothing Then
