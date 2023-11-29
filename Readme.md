@@ -6,7 +6,7 @@
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e2245/)**
 <!-- run online end -->
-This example demonstrates how to allow users to sort data in the [Grid View](https://docs.devexpress.com/AspNet/5823/components/grid-view) control based on their preferences. 
+This example demonstrates how to allow users to sort data based on their preferences in the [Grid View](https://docs.devexpress.com/AspNet/5823/components/grid-view) control. 
 
 ![Sort Grid Data](sort-by-user-preferences.gif)
 
