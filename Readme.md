@@ -9,9 +9,6 @@
 * [Default.aspx.cs](./CS/WebSite/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/WebSite/Default.aspx.vb))
 <!-- default file list end -->
 # How to sort ASPxGridView by ASPxTextBox's value in UnboundColumn's DataItemTemplate
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128543041/)**
-<!-- run online end -->
 
 
 <p>This demo illustrates how to use the ASPxGridView's UnboundColumn and provide the opportunity to sort the ASPxGridView by the value of the ASPxTextBox control in the UnboundColumn's DataItemTemplate.</p><p><strong>See Also:</strong><br />
