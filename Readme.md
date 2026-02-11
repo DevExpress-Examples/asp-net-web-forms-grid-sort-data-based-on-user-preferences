@@ -25,7 +25,7 @@ In this example, the Grid View contains an unbound column that displays text box
 
 - [How to calculate bound and unbound column values on the client](https://github.com/DevExpress-Examples/asp-net-web-forms-grid-calculate-bound-and-unbound-column-values)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-sort-data-based-on-user-preferences&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=asp-net-web-forms-grid-sort-data-based-on-user-preferences&~~~was_helpful=no)
 
